@@ -1,0 +1,37 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: api-demo
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: api-demo
+        version: v1
+    spec:
+      hostNetwork: true
+      nodeSelector:
+        task-demo: "yes"
+      containers:
+      - image: huanwei/api-demo:v1
+        imagePullPolicy: Always
+        name: api-demo
+        securityContext:
+          capabilities:
+            add:
+            - SYS_PTRACE
+        volumeMounts:
+        - mountPath: /tmp
+          name: tmp
+        - mountPath: /harmonycloud/api-demo
+          name: install
+      volumes:
+      - name: tmp
+        hostPath:
+          path: /tmp
+          type: Directory
+      - name: install
+        hostPath:
+          path: /harmonycloud/api-demo
+          type: DirectoryOrCreate

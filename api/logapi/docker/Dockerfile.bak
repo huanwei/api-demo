@@ -1,0 +1,4 @@
+FROM huanwei/alpine-oraclejdk8:slim
+VOLUME /tmp
+ADD api.logapi-1.0-SNAPSHOT.jar logapi.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/logapi.jar"]

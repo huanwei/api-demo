@@ -1,0 +1,147 @@
+2017-01-20 10:47:44,129 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:48] Starting App v1.0-SNAPSHOT on share-ThinkCentre-E73 with PID 9388 (/home/share/IdeaProjects/k8s-oam/api/logapi/target/api.logapi-1.0-SNAPSHOT.jar started by share in /home/share/IdeaProjects/k8s-oam/api/logapi)
+2017-01-20 10:47:44,145 INFO [main] c.h.k.o.l.App [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2017-01-20 10:47:44,240 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e32c033: startup date [Fri Jan 20 10:47:44 CST 2017]; root of context hierarchy
+2017-01-20 10:47:44,493 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.2.4.Final
+2017-01-20 10:47:45,243 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$70a1f8a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-01-20 10:47:45,661 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:87] Tomcat initialized with port(s): 8081 (http)
+2017-01-20 10:47:45,672 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service Tomcat
+2017-01-20 10:47:45,673 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.5
+2017-01-20 10:47:45,743 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2017-01-20 10:47:45,743 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 1503 ms
+2017-01-20 10:47:45,846 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2017-01-20 10:47:45,849 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-01-20 10:47:45,850 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-01-20 10:47:45,850 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-01-20 10:47:45,850 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2017-01-20 10:47:46,244 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e32c033: startup date [Fri Jan 20 10:47:44 CST 2017]; root of context hierarchy
+2017-01-20 10:47:46,303 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/monitor]}" onto public java.util.List<cn.harmonycloud.k8s.oam.logapi.domain.LogMonitorConfig> cn.harmonycloud.k8s.oam.logapi.apiserver.LogController.monitor()
+2017-01-20 10:47:46,304 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/setmonitor],methods=[POST]}" onto public cn.harmonycloud.k8s.oam.logapi.domain.LogMonitorConfig cn.harmonycloud.k8s.oam.logapi.apiserver.LogController.setmonitor(cn.harmonycloud.k8s.oam.logapi.domain.LogMonitorConfig)
+2017-01-20 10:47:46,305 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/setalerttype],methods=[POST]}" onto public cn.harmonycloud.k8s.oam.logapi.dto.AlertType cn.harmonycloud.k8s.oam.logapi.apiserver.LogController.setalerttype(cn.harmonycloud.k8s.oam.logapi.dto.AlertType)
+2017-01-20 10:47:46,305 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/alerttype]}" onto public java.lang.String cn.harmonycloud.k8s.oam.logapi.apiserver.LogController.alerttype()
+2017-01-20 10:47:46,305 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/setalertemail],methods=[POST]}" onto public cn.harmonycloud.k8s.oam.logapi.domain.MailInfo cn.harmonycloud.k8s.oam.logapi.apiserver.LogController.setalertemail(cn.harmonycloud.k8s.oam.logapi.domain.MailInfo)
+2017-01-20 10:47:46,305 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/alertemail]}" onto public cn.harmonycloud.k8s.oam.logapi.domain.MailInfo cn.harmonycloud.k8s.oam.logapi.apiserver.LogController.alertemail()
+2017-01-20 10:47:46,306 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/profile]}" onto public java.lang.String cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.getProfile()
+2017-01-20 10:47:46,306 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/greeting]}" onto public cn.harmonycloud.k8s.oam.logapi.apiserver.Greeting cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.greeting(java.lang.String) throws java.net.UnknownHostException
+2017-01-20 10:47:46,308 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-01-20 10:47:46,309 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-01-20 10:47:46,336 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-20 10:47:46,336 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-20 10:47:46,371 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-01-20 10:47:46,554 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2017-01-20 10:47:46,568 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-8081"]
+2017-01-20 10:47:46,580 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler [http-nio-8081]
+2017-01-20 10:47:46,589 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2017-01-20 10:47:46,602 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:185] Tomcat started on port(s): 8081 (http)
+2017-01-20 10:47:46,606 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:57] Started App in 2.868 seconds (JVM running for 3.393)
+2017-01-20 10:49:32,180 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-01-20 10:49:32,180 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2017-01-20 10:49:32,194 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2019-12-09 16:59:31,775 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:48] Starting App v1.0-SNAPSHOT on huandeMacBook-Pro.local with PID 73295 (/Users/huan/code/src/github.com/huanwei/api-demo/api/logapi/target/api.logapi-1.0-SNAPSHOT.jar started by huan in /Users/huan/code/src/github.com/huanwei/api-demo/api/logapi)
+2019-12-09 16:59:31,781 INFO [main] c.h.k.o.l.App [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2019-12-09 16:59:31,855 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@619a5dff: startup date [Mon Dec 09 16:59:31 CST 2019]; root of context hierarchy
+2019-12-09 16:59:32,242 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.2.4.Final
+2019-12-09 16:59:33,495 INFO [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java:328] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5cf04eca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-09 16:59:34,272 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:87] Tomcat initialized with port(s): 8081 (http)
+2019-12-09 16:59:34,308 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service Tomcat
+2019-12-09 16:59:34,310 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.5
+2019-12-09 16:59:34,430 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2019-12-09 16:59:34,431 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 2576 ms
+2019-12-09 16:59:34,596 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-09 16:59:34,601 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 16:59:34,602 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 16:59:34,602 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-09 16:59:34,602 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 16:59:34,934 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@619a5dff: startup date [Mon Dec 09 16:59:31 CST 2019]; root of context hierarchy
+2019-12-09 16:59:35,023 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/greeting]}" onto public cn.harmonycloud.k8s.oam.logapi.apiserver.Greeting cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.greeting(java.lang.String) throws java.net.UnknownHostException
+2019-12-09 16:59:35,025 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/profile]}" onto public java.lang.String cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.getProfile()
+2019-12-09 16:59:35,028 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-09 16:59:35,029 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-09 16:59:35,071 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 16:59:35,073 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 16:59:35,131 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 16:59:35,280 WARN [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:549] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2019-12-09 16:59:35,281 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:449] Unregistering JMX-exposed beans on shutdown
+2019-12-09 16:59:35,283 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Stopping service Tomcat
+2019-12-09 16:59:35,295 WARN [localhost-startStop-1] o.a.c.l.WebappClassLoaderBase [DirectJDKLog.java:179] The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2019-12-09 16:59:35,305 INFO [main] o.s.b.a.l.AutoConfigurationReportLoggingInitializer [AutoConfigurationReportLoggingInitializer.java:101] 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-12-09 16:59:35,309 ERROR [main] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:42] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2019-12-09 17:02:04,755 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:48] Starting App v1.0-SNAPSHOT on huandeMacBook-Pro.local with PID 74110 (/Users/huan/code/src/github.com/huanwei/api-demo/api/logapi/target/api.logapi-1.0-SNAPSHOT.jar started by huan in /Users/huan/code/src/github.com/huanwei/api-demo/api/logapi)
+2019-12-09 17:02:04,763 INFO [main] c.h.k.o.l.App [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2019-12-09 17:02:04,857 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@619a5dff: startup date [Mon Dec 09 17:02:04 CST 2019]; root of context hierarchy
+2019-12-09 17:02:05,186 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.2.4.Final
+2019-12-09 17:02:06,808 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:87] Tomcat initialized with port(s): 8081 (http)
+2019-12-09 17:02:06,830 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service Tomcat
+2019-12-09 17:02:06,832 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.5
+2019-12-09 17:02:06,974 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2019-12-09 17:02:06,974 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 2117 ms
+2019-12-09 17:02:07,186 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-09 17:02:07,192 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 17:02:07,192 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 17:02:07,193 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-09 17:02:07,193 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 17:02:07,563 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@619a5dff: startup date [Mon Dec 09 17:02:04 CST 2019]; root of context hierarchy
+2019-12-09 17:02:07,653 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/profile]}" onto public java.lang.String cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.getProfile()
+2019-12-09 17:02:07,655 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/greeting]}" onto public cn.harmonycloud.k8s.oam.logapi.apiserver.Greeting cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.greeting(java.lang.String) throws java.net.UnknownHostException
+2019-12-09 17:02:07,659 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-09 17:02:07,660 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-09 17:02:07,698 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:02:07,698 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:02:07,744 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:02:07,899 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2019-12-09 17:02:07,917 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-8081"]
+2019-12-09 17:02:07,935 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler [http-nio-8081]
+2019-12-09 17:02:07,976 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2019-12-09 17:02:07,999 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:185] Tomcat started on port(s): 8081 (http)
+2019-12-09 17:02:08,004 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:57] Started App in 3.896 seconds (JVM running for 4.847)
+2019-12-09 17:02:32,199 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-09 17:02:32,199 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-09 17:02:32,225 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-12-09 17:41:57,404 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:48] Starting App v1.0-SNAPSHOT on huandeMacBook-Pro.local with PID 86044 (/Users/huan/code/src/github.com/huanwei/api-demo/api/logapi/target/api.logapi-1.0-SNAPSHOT.jar started by huan in /Users/huan/code/src/github.com/huanwei/api-demo/api/logapi)
+2019-12-09 17:41:57,408 INFO [main] c.h.k.o.l.App [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2019-12-09 17:41:57,487 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@619a5dff: startup date [Mon Dec 09 17:41:57 CST 2019]; root of context hierarchy
+2019-12-09 17:41:57,818 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.2.4.Final
+2019-12-09 17:41:59,455 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:87] Tomcat initialized with port(s): 8081 (http)
+2019-12-09 17:41:59,473 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service Tomcat
+2019-12-09 17:41:59,475 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.5
+2019-12-09 17:41:59,601 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2019-12-09 17:41:59,601 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 2114 ms
+2019-12-09 17:41:59,795 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-09 17:41:59,802 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 17:41:59,802 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 17:41:59,803 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-09 17:41:59,803 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 17:42:00,138 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@619a5dff: startup date [Mon Dec 09 17:41:57 CST 2019]; root of context hierarchy
+2019-12-09 17:42:00,243 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/greeting]}" onto public cn.harmonycloud.k8s.oam.logapi.apiserver.Greeting cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.greeting(java.lang.String) throws java.net.UnknownHostException
+2019-12-09 17:42:00,245 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/profile]}" onto public java.lang.String cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.getProfile()
+2019-12-09 17:42:00,247 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-09 17:42:00,247 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-09 17:42:00,277 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:42:00,277 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:42:00,317 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:42:00,467 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2019-12-09 17:42:00,485 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-8081"]
+2019-12-09 17:42:00,499 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler [http-nio-8081]
+2019-12-09 17:42:00,525 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2019-12-09 17:42:00,548 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:185] Tomcat started on port(s): 8081 (http)
+2019-12-09 17:42:00,555 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:57] Started App in 3.828 seconds (JVM running for 4.934)
+2019-12-09 17:42:27,932 INFO [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-09 17:42:27,932 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-09 17:42:27,958 INFO [http-nio-8081-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
