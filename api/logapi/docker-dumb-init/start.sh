@@ -8,5 +8,5 @@ if [  -d "/harmonycloud/tmp" ]; then
 fi
 
 cd /harmonycloud/api-demo
-nohup /usr/local/jdk1.8.0_231/bin/java -jar api.logapi-1.0-SNAPSHOT.jar --spring.config.location=/harmonycloud/api-demo/config/application.properties
+nohup java -jar api.logapi-1.0-SNAPSHOT.jar --spring.config.location=/harmonycloud/api-demo/config/application.properties
 sleep 1

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t huanwei/api-demo-systemd:v1 .
+docker build -t huanwei/api-demo-dumb-init:v1 .
