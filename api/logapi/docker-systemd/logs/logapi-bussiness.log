@@ -1,0 +1,31 @@
+2019-12-09 17:58:30,781 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:48] Starting App v1.0-SNAPSHOT on huandeMacBook-Pro.local with PID 90969 (/Users/huan/code/src/github.com/huanwei/api-demo/api/logapi/docker/api.logapi-1.0-SNAPSHOT.jar started by huan in /Users/huan/code/src/github.com/huanwei/api-demo/api/logapi/docker)
+2019-12-09 17:58:30,797 INFO [main] c.h.k.o.l.App [SpringApplication.java:661] No active profile set, falling back to default profiles: default
+2019-12-09 17:58:30,877 INFO [main] o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [AbstractApplicationContext.java:581] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e32c033: startup date [Mon Dec 09 17:58:30 CST 2019]; root of context hierarchy
+2019-12-09 17:58:31,251 INFO [background-preinit] o.h.v.i.u.Version [Version.java:30] HV000001: Hibernate Validator 5.2.4.Final
+2019-12-09 17:58:32,697 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:87] Tomcat initialized with port(s): 8082 (http)
+2019-12-09 17:58:32,714 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:179] Starting service Tomcat
+2019-12-09 17:58:32,716 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:179] Starting Servlet Engine: Apache Tomcat/8.5.5
+2019-12-09 17:58:32,860 INFO [localhost-startStop-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring embedded WebApplicationContext
+2019-12-09 17:58:32,861 INFO [localhost-startStop-1] o.s.w.c.ContextLoader [EmbeddedWebApplicationContext.java:276] Root WebApplicationContext: initialization completed in 1984 ms
+2019-12-09 17:58:33,086 INFO [localhost-startStop-1] o.s.b.w.s.ServletRegistrationBean [ServletRegistrationBean.java:190] Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-09 17:58:33,094 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 17:58:33,094 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 17:58:33,095 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-09 17:58:33,095 INFO [localhost-startStop-1] o.s.b.w.s.FilterRegistrationBean [AbstractFilterRegistrationBean.java:258] Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 17:58:33,372 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerAdapter [RequestMappingHandlerAdapter.java:534] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e32c033: startup date [Mon Dec 09 17:58:30 CST 2019]; root of context hierarchy
+2019-12-09 17:58:33,461 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/profile]}" onto public java.lang.String cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.getProfile()
+2019-12-09 17:58:33,463 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/api/log/greeting]}" onto public cn.harmonycloud.k8s.oam.logapi.apiserver.Greeting cn.harmonycloud.k8s.oam.logapi.apiserver.GreetingController.greeting(java.lang.String) throws java.net.UnknownHostException
+2019-12-09 17:58:33,466 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-09 17:58:33,467 INFO [main] o.s.w.s.m.m.a.RequestMappingHandlerMapping [AbstractHandlerMethodMapping.java:543] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-09 17:58:33,499 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:58:33,499 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:58:33,536 INFO [main] o.s.w.s.h.SimpleUrlHandlerMapping [AbstractUrlHandlerMapping.java:354] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-09 17:58:33,700 INFO [main] o.s.j.e.a.AnnotationMBeanExporter [MBeanExporter.java:431] Registering beans for JMX exposure on startup
+2019-12-09 17:58:33,718 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Initializing ProtocolHandler ["http-nio-8082"]
+2019-12-09 17:58:33,733 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:179] Starting ProtocolHandler [http-nio-8082]
+2019-12-09 17:58:33,771 INFO [main] o.a.t.u.n.NioSelectorPool [DirectJDKLog.java:179] Using a shared selector for servlet write/read
+2019-12-09 17:58:33,807 INFO [main] o.s.b.c.e.t.TomcatEmbeddedServletContainer [TomcatEmbeddedServletContainer.java:185] Tomcat started on port(s): 8082 (http)
+2019-12-09 17:58:33,813 INFO [main] c.h.k.o.l.App [StartupInfoLogger.java:57] Started App in 3.621 seconds (JVM running for 4.803)
+2019-12-09 17:59:12,896 INFO [http-nio-8082-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:179] Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-09 17:59:12,896 INFO [http-nio-8082-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:489] FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-09 17:59:12,923 INFO [http-nio-8082-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:508] FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms

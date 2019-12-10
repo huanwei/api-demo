@@ -1,0 +1,48 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: api-demo
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: api-demo
+        version: v1
+    spec:
+      hostNetwork: true
+      dnsPolicy: ClusterFirstWithHostNet
+      nodeSelector:
+        api-demo: "yes"
+      containers:
+      - image: huanwei/api-demo-systemd:v1
+        imagePullPolicy: IfNotPresent
+        name: api-demo
+        #ports:
+        #- containerPort: 8082
+        securityContext:
+          privileged: true
+          capabilities:
+            add:
+            - SYS_PTRACE
+        volumeMounts:
+        - mountPath: /tmp
+          name: tmp
+        - mountPath: /sys/fs/cgroup
+          name: cgroup
+          readOnly: true
+        - mountPath: /harmonycloud/api-demo
+          name: install
+      volumes:
+      - name: tmp
+        hostPath:
+          path: /tmp
+          type: Directory
+      - name: cgroup
+        hostPath:
+          path: /sys/fs/cgroup
+          type: Directory
+      - name: install
+        hostPath:
+          path: /harmonycloud/api-demo
+          type: DirectoryOrCreate
