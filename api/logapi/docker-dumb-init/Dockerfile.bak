@@ -1,0 +1,8 @@
+#FROM huanwei/alpine-oraclejdk8:slim
+FROM huanwei/systemd-jdk8:v1
+VOLUME /tmp
+ADD api.logapi-1.0-SNAPSHOT.jar logapi.jar
+COPY springboot.service /usr/lib/systemd/system/
+RUN systemctl enable springboot.service
+
+#ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/logapi.jar"]

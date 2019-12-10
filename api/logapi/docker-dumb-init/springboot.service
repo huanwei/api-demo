@@ -1,0 +1,11 @@
+[Unit]
+Description=springboot Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/harmonycloud/bin/start.sh
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
